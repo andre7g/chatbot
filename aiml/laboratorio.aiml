@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+  <!-- DEFAULT -->
+  <category>
+    <pattern>GANARE EL CURSO</pattern>
+    <template><random>
+    <li> NO LO CREO </li>
+    <li> ESTUDIA </li>
+    <li> CLARO QUE SI </li>
+    </random></template>
+  </category>
+  <category><pattern>TENGO * AÑOS</pattern>
+    <template>TENER <star index = "1"/> DE EDAD ES GENIAL</template>
+  </category>
+  <category><pattern>ESTOY EN EL CURSO DE * </pattern>
+    <template><star index = "1"/> ES EL MEJOR CURSO</template>
+  </category>
+  <category>
+    <pattern>ME GUSTAN LAS PELICULAS DE MARVEL</pattern>
+    <template>
+      <random>
+        <li>ESTA BIEN PERO CAMBIANDO DE TEMA CUAL ES TU ACTOR FAVORITO</li>
+        <li>EN FIN TE GUSTA VER PELICULAS</li>
+      </random>
+    </template>
+  </category>
+  <category>
+      <pattern>*</pattern>
+      <template>
+        <random>
+              <li>HOLA!</li>
+              <li>LO DICES EN SERIO</li> 
+              <li>A VER A VER</li>
+              <li>NO ENCUENTRO LA RELACION,</li>
+              <li>INTERESANTE,</li>
+        </random>
+        <random>
+            <li> QUE GUSTO TENER POR AQUI A UN ESTUDIANTE</li>
+            <li> ME DEJASTE SIN PALABRAS </li>
+            <li> ERES ESTUDIANTE DE LA UMG</li>
+            <li><star/>???</li>
+          </random>
+      </template>
+  </category>
+ 
+</aiml>
